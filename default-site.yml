@@ -17,7 +17,7 @@ asciidoc:
   extensions:
   - ./content/supplemental-ui/lib/tab-block.js
   - ./content/supplemental-ui/lib/remote-include-processor.js
-
+ 
 ui:
   bundle:
     url: https://github.com/danieloh30/course-ui/raw/main/ui-bundle-fix-rexp.zip
