@@ -1,11 +1,11 @@
 name: modules
-title: ROSA Workshop
+title: Modern App Dev Roadshow - Cloud Architect Track for ROSA
 version: master
 nav:
 - modules/ROOT/nav.adoc
 asciidoc:
   attributes:
-    lab_name: ROSA Workshop
+    lab_name: Modern App Dev Roadshow - Cloud Architect Track for ROSA
     release_version: master
     page-pagination: true  
     experimental: true
