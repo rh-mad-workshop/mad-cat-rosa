@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 echo "Stopping serve process..."
-podman kill showroom-httpd
+${CONTAINER_RUNTIME} kill showroom-httpd
 echo "Stopped serve process."
