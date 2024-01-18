@@ -131,4 +131,4 @@ https://console-openshift-console.apps.rosa-z8ssd.ls3a.p1.openshiftapps.com/
 +
 Congratulations! You're now logged into the cluster and ready to move on to the workshop content.
 
-If you have any issues please content your lab instructors who can help you out.
+If you have any issues please contact your lab instructors who can help you out.

@@ -93,6 +93,22 @@ This command adds a single m5.xlarge instance to the first AWS availability zone
 
 // rosa create machinepool -c rosa-${GUID} --replicas 1 --name workshop --instance-type m5.xlarge --use-spot-instances
 
+. View the new machine pool:
+[source,sh,role=execute]
+----
+oc -n openshift-machine-api get machinesets
+----
++
+.Sample Output
+----
+NAME                                   DESIRED   CURRENT   READY   AVAILABLE   AGE
+rosa-6n4s8-7hbhw-infra-us-east-2a      2         2         2       2           31m
+rosa-6n4s8-7hbhw-worker-us-east-2a     2         2         2       2           49m
+rosa-6n4s8-7hbhw-workshop-us-east-2a   1         1                             14s
+----
++
+You can now see the new machineset called named "worker".
+
 . Now, let's scale up our selected MachinePool from one to two machines.
 To do so, run the following command:
 +
@@ -148,9 +164,9 @@ rosa-6n4s8-7hbhw-workshop-us-east-2a-pcfd9   Provisioned   m5.xlarge    us-east-
 rosa-6n4s8-7hbhw-workshop-us-east-2a-pxnvd   Provisioned   m5.xlarge    us-east-2   us-east-2a   4m30s
 ----
 
-. Let the above command run until all machines are in the *Running* phase. This means that they are ready and available to run Pods in the cluster. Hit CTRL-C to exit the `oc` command.
+. Let the above command run until all machines are in the *Running* phase. This means that they are ready and available to run Pods in the cluster. When they are listed as Running you can hit CTRL-C to exit the `oc` command. If you are comfortable with what is happening you can move on to the next steps, which will remove the new nodes.
 
-. We don't actually need these extra worker nodes so let's scale the cluster back down to a total of 3 worker nodes by scaling down the "Workshop" Machine Pool.
+. But we don't actually need these extra worker nodes so let's scale the cluster back down to a total of 3 worker nodes by scaling down the "Workshop" Machine Pool.
 To do so, run the following command:
 +
 [source,sh,role=execute]
@@ -190,6 +206,7 @@ I: Successfully deleted machine pool 'workshop' from cluster 'rosa-6n4s8'
 ----
 +
 . You can validate that the MachinePool has been deleted by using the `rosa` cli:
++
 [source,sh,role=execute]
 ----
 rosa list machinepools -c rosa-${GUID}
