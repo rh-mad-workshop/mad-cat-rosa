@@ -189,7 +189,7 @@ serviceaccount/microsweeper annotated
 
 Now that we've got a DynamoDB instance up and running and our IRSA configuration completed, let's build and deploy our application.
 
-. In order to build the application you will need the Java JDK 17 and the Quarkus CLI installed. Java JDK 17 is already installed on your bastion VM so let's install the Quarkus CLI:
+. In order to build the application you will need the Quarkus CLI installed. Java JDK 17 is already installed on your bastion VM so let's install the Quarkus CLI:
 +
 [source,sh,role=execute]
 ----
