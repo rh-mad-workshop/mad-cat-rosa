@@ -23,7 +23,7 @@ rosa list machinepools --cluster rosa-${GUID}
 [source,text,options=nowrap]
 ----
 ID      AUTOSCALING  REPLICAS  INSTANCE TYPE  LABELS    TAINTS    AVAILABILITY ZONES    SUBNETS    SPOT INSTANCES  DISK SIZE  SG IDs
-worker  No           2         m5.xlarge                          us-east-2a
+worker  No           2         m6a.xlarge                         us-east-2a                       No              300 GiB  
 ----
 +
 The *ID* of the MachinePool that you want to add autoscaling to is `worker`.
@@ -43,6 +43,8 @@ I: Updated machine pool 'worker' on cluster 'rosa-6n4s8'
 
 . Next, let's check to see that our managed machine autoscalers have been created.
 To do so, run the following command:
+
+Note that it takes a while to create machine autoscaler until then we get no resources found.
 +
 [source,sh,role=execute]
 ----
