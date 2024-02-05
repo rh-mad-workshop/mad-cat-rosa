@@ -1,6 +1,6 @@
 == The Workshop Environment You Are Using
 
-Your environment has already been set up and with the tools you need to work with ROSA and AWS.
+Your environment has already been set up with the tools you need to work with ROSA and AWS
 
 Your workshop environment consists of several components which have been pre-configured and are ready to use.
 This includes an Amazon Web Services (AWS) account, and many other supporting resources.
