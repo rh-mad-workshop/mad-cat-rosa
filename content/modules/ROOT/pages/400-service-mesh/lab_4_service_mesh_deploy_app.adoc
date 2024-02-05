@@ -150,11 +150,11 @@ destinationrule.networking.istio.io/details created
 
 === Verifying the Bookinfo installation
 
-. First, let's verify that all pods are running and ready by running the following command:
+. First, let's verify that all pods are running and ready by running the following command.
 +
 [source,sh,role=execute]
 ----
-oc -n bookinfo get pods
+oc -n bookinfo get pods --watch
 ----
 +
 .Sample Output
@@ -169,7 +169,7 @@ reviews-v2-5fc469b4ff-fp4fn       2/2     Running   0          97s
 reviews-v3-7d84688cc9-kktpt       2/2     Running   0          97s
 ----
 
-. Next, let's get the URL for the product page.
+. Press Ctrl+C to exit, let's get the URL for the product page.
 To do so, run the following command:
 +
 [source,sh,role=execute]
