@@ -84,12 +84,7 @@ https://kiali-istio-system.apps.rosa-6n4s8.1c1c.p1.openshiftapps.com/console
 +
 [TIP]
 ====
-If you forgot the password for the `admin` user you created with Cognito use:
-
-[source,sh]
-----
-zoieo7Helya7aarU-2@23
-----
+Click on `Congnito` then it will log in to Kiali automatically. In case you need to key in the username and password again, use the Cognito credential you created in the previous lab.
 ====
 +
 image::kiali-login-with-cluster-credentials.png[Kiali Login]
