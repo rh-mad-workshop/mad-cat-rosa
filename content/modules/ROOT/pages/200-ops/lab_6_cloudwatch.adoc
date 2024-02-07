@@ -282,7 +282,7 @@ clusterlogging.logging.openshift.io/instance created
 +
 [source,sh,role=execute]
 ----
-aws logs describe-log-groups \
+watch aws logs describe-log-groups \
   --log-group-name-prefix rosa-${GUID}
 ----
 +
@@ -308,6 +308,8 @@ aws logs describe-log-groups \
     ]
 }
 ----
+
+Use CTRL-C to break out of the watch command once you've seen the groups created.
 
 Congratulations!
 
