@@ -39,6 +39,13 @@ node/ip-10-0-252-142.us-east-2.compute.internal
 +
 You may see between two and four nodes - depending if you did the autoscaling lab recently (if you did the cluster has probably not scaled down yet). This demonstrates that our machine pool and associated nodes are properly annotated!
 
+[TIP]
+====
+You might find labelling is slow depending on your autoscaling lab; if so you can run the above command with a `--watch` added to it as such:
+`oc get nodes --selector='tier=frontend' -o name --watch`
+This will allow you to see the nodes be labelled in real time. It may takle some time so be patient, but it's pretty cool!
+====
+
 == Deploy an app to the labeled nodes
 
 Now that we've successfully labeled our nodes, let's deploy a workload to demonstrate app placement using `nodeSelector`.
