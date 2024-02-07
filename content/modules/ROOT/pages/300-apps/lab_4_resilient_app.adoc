@@ -78,7 +78,7 @@ requests:
 [source,sh,role=execute]
 ----
 oc -n microsweeper-ex get route microsweeper-appservice \
-  -o jsonpath='http://{.spec.host}{"\n"}'
+  -o jsonpath='https://{.spec.host}{"\n"}'
 ----
 +
 Then visit the URL presented in a new tab in your web browser (using HTTP). For example, your output will look something similar to:
@@ -86,7 +86,7 @@ Then visit the URL presented in a new tab in your web browser (using HTTP). For 
 .Sample Output
 [source,text,options=nowrap]
 ----
-http://microsweeper-appservice-microsweeper-ex.apps.test-cluster.2ubs.p1.openshiftapps.com
+https://microsweeper-appservice-microsweeper-ex.apps.test-cluster.2ubs.p1.openshiftapps.com
 ----
 +
 In that case, you'd visit `+http://microsweeper-appservice-microsweeper-ex.apps.test-cluster.2ubs.p1.openshiftapps.com+` in your browser.
@@ -246,7 +246,7 @@ microsweeper-appservice-cpu   Deployment/microsweeper-appservice   0%/50%    2  
 +
 [source,sh,role=execute]
 ----
-FRONTEND_URL=http://$(oc -n microsweeper-ex get route microsweeper-appservice -o jsonpath='{.spec.host}')/
+FRONTEND_URL=https://$(oc -n microsweeper-ex get route microsweeper-appservice -o jsonpath='{.spec.host}')/
 
 ab -c100 -n10000 ${FRONTEND_URL}
 ----
