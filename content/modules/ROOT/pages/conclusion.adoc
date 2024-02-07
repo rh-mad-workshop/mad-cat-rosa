@@ -12,6 +12,6 @@ Additional resources to help you get started:
 
 * ROSA https://youtu.be/roiCLvcR8fE[install video,window=_blank]
 * ROSA https://www.redhat.com/en/technologies/cloud-computing/openshift/aws/learn[Learning Hub,window=_blank]
-* ROSA https://docs.aws.amazon.com/ROSA/latest/userguide/getting-started.html[user guide,window=_blank]
+* ROSA https://docs.aws.amazon.com/ROSA/latest/userguide/getting-started.html[user guide at AWS,window=_blank]
 
 *Thank you for taking the time to explore ROSA!*

@@ -148,6 +148,19 @@ destinationrule.networking.istio.io/ratings created
 destinationrule.networking.istio.io/details created
 ----
 
+. Finally, let's patch the route to enable https for security and ease of use:
++
+[source,sh,role=execute]
+----
+oc patch route -n istio-system istio-ingressgateway --patch='{"spec": {"tls": {"insecureEdgeTerminationPolicy": "Allow", "termination": "edge"}}}' --type=merge
+----
++
+.Sample Output
+[source,text,options=nowrap]
+----
+route.route.openshift.io/istio-ingressgateway patched
+----
+
 === Verifying the Bookinfo installation
 
 . First, let's verify that all pods are running and ready by running the following command.
@@ -174,15 +187,15 @@ To do so, run the following command:
 +
 [source,sh,role=execute]
 ----
-echo "http://$(oc -n istio-system get route istio-ingressgateway -o jsonpath='{.spec.host}')/productpage"
+echo "https://$(oc -n istio-system get route istio-ingressgateway -o jsonpath='{.spec.host}')/productpage"
 ----
 +
 .Sample Output
 [source,text,options=nowrap]
 ----
-http://istio-ingressgateway-istio-system.apps.rosa-6n4s8.1c1c.p1.openshiftapps.com/productpage
+https://istio-ingressgateway-istio-system.apps.rosa-6n4s8.1c1c.p1.openshiftapps.com/productpage
 ----
 
-. Copy and paste the URL provided in the previous step into your web browser and verify the Bookinfo product page is successfully deployed. If you get an error your browser may have changed the http to https. Simply edit it in your browser and it should work.
+. Copy and paste the URL provided in the previous step into your web browser and verify the Bookinfo product page is successfully deployed. 
 +
 You should see a book review of "The Comedy of Errors".

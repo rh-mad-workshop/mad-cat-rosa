@@ -43,6 +43,14 @@ VERSION  NOTES
 Depending on when you run this command the available version list may be longer than just the next release.
 ====
 
+. To make things easier, let's variablise the recommended version presented using a simple command:
++
+[source,sh,role=execute]
+----
+export REC_VERSION=$(rosa list upgrades --cluster rosa-${GUID} | awk '/recommended/{print $1}')
+echo ${REC_VERSION}
+----
+
 . We don't want to actually upgrade the cluster right now since that may disrupt the lab environment. Instead, we will schedule an update at a later time.
 +
 Get a date and time that is 24 hours from now:
@@ -67,7 +75,7 @@ Date: 2023-04-18, Time: 19:51
 ----
 rosa upgrade cluster \
   -c rosa-${GUID} \
-  --version 4.13.25 \
+  --version ${REC_VERSION} \
   --mode auto \
   --schedule-date ${UPGRADE_DATE} \
   --schedule-time ${UPGRADE_TIME}
