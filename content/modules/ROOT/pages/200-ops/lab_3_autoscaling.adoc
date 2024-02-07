@@ -43,8 +43,6 @@ I: Updated machine pool 'worker' on cluster 'rosa-6n4s8'
 
 . Next, let's check to see that our managed machine autoscalers have been created.
 To do so, run the following command:
-
-Note that it takes a while to create machine autoscaler until then we get no resources found.
 +
 [source,sh,role=execute]
 ----
