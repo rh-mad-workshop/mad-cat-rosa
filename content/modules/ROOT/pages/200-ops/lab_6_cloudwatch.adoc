@@ -289,6 +289,8 @@ watch aws logs describe-log-groups \
 .Sample Output
 [source,json,options=nowrap]
 ----
+Every 2.0s: aws logs describe-log-groups --log...  bastion.blmrz.internal: Wed Dec  7 06:06:43 2024
+
 {
     "logGroups": [
         {
