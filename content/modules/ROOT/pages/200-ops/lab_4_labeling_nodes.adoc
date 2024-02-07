@@ -43,7 +43,7 @@ You may see between two and four nodes - depending if you did the autoscaling la
 ====
 You might find labelling is slow depending on your autoscaling lab; if so you can run the above command with a `--watch` added to it as such:
 `oc get nodes --selector='tier=frontend' -o name --watch`
-This will allow you to see the nodes be labelled in real time. It may takle some time so be patient, but it's pretty cool!
+This will allow you to see the nodes be labelled in real time. It may take some time so be patient, but it's pretty cool!
 ====
 
 == Deploy an app to the labeled nodes
