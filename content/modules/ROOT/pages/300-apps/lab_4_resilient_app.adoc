@@ -283,7 +283,7 @@ microsweeper-appservice-cpu   Deployment/microsweeper-appservice   0%/50%     2 
 
 == Summary and Next Steps
 
-Here you learned:
+In this module you learned:
 
 * Set Limits and Requests on the Microsweeper application from the previous section
 * Scale the Microsweeper application up and down

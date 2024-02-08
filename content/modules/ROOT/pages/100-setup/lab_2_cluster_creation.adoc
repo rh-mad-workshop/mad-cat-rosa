@@ -12,11 +12,9 @@ ifeval::["{rosa_console_url}" != "none"]
 During this workshop you will be working on a cluster that has already been provisioned for you. 
 There are no exercises to complete on this page but it remains as an educational resource for your review.
 
-Your pre-provisioned cluster is accessible at:
+Your pre-provisioned cluster is accessible at: {rosa_console_url}[ROSA Console URL,window=_blank]
 
-ROSA Console URL: {rosa_console_url}[ROSA Console URL,window=_blank]
-
-To continue the lab please follow this link for the next section: link:./lab_4_access_cluster.html[Create an Admin User].
+To continue the lab now please follow this link to go to the next section: link:./lab_4_access_cluster.html[Create an Admin User].
 ====
 
 endif::[]

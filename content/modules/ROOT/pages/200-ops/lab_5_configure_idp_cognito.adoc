@@ -444,7 +444,7 @@ You've successfully configured your Red Hat OpenShift Service on AWS (ROSA) clus
 
 == Summary
 
-Here you learned:
+In this module you learned:
 
 * Configure Amazon Cognito to act as the ROSA identity provider
 * Configure your ROSA cluster to use Amazon Cognito for authentication

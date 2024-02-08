@@ -200,7 +200,7 @@ You've successfully demonstrated the ability to label nodes and target those nod
 
 == Summary
 
-Here's you learned:
+In this module you learned:
 
 * Add labels to Machine Pools
 * Deploy an application on nodes with certain labels using nodeSelector

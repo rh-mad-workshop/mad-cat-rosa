@@ -233,10 +233,14 @@ You've successfully demonstrated cluster autoscaling.
 
 == Summary
 
-Here you learned:
+In this module you learned:
 
 * Enable autoscaling on the default Machine Pool for your cluster
 * Deploy an application on the cluster and watch the cluster autoscaler scale your cluster to support the increased workload
+
+//// 
+
+REMOVING AS THERE IS NO ACCESS TO OCM
 
 == Enable Autoscaling via Red Hat OpenShift Cluster Manager Console
 
@@ -261,3 +265,5 @@ image::ocm-machine-pool-three-dots.png[OCM - Machine Pool Menu]
 . Finally, check the _Enable autoscaling_ checkbox, and set the minimum to `1` and maximum to `2`, then click _Apply_.
 +
 image::ocm-machine-pool-scale-menu.png[OCM - Machine Pool Scale Menu]
+
+////

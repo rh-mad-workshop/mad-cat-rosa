@@ -319,7 +319,7 @@ You've successfully forwarded your cluster's logs to the Amazon CloudWatch servi
 
 == Summary
 
-Here you learned:
+In this module you learned:
 
 * Create an AWS IAM trust policy and role to grant your cluster access to Amazon CloudWatch
 * Install the OpenShift Cluster Logging Operator in your cluster
