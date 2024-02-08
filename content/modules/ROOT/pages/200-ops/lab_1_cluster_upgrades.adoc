@@ -118,6 +118,10 @@ In this module you learned:
 * Use OpenShift Cluster Manager (OCM) to schedule an upgrade for your ROSA cluster
 * Explore the OpenShift Upgrade Graph Tool to see available upgrade paths
 
+////
+
+REMOVING AS THERE IS NO ACCESS TO OCM
+
 == Upgrade using the OpenShift Cluster Manager
 
 [WARNING]
@@ -156,3 +160,5 @@ image::ocm-update-close.png[OCM - Update Close]
 Congratulations!
 
 You've successfully scheduled an upgrade of your cluster for tomorrow at this time. While the workshop environment will be deleted before then, you now have the experience to schedule upgrades in the future.
+
+////
