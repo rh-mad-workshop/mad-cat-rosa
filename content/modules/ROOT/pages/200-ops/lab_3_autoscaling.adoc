@@ -238,7 +238,9 @@ Here you learned:
 * Enable autoscaling on the default Machine Pool for your cluster
 * Deploy an application on the cluster and watch the cluster autoscaler scale your cluster to support the increased workload
 
-//// REMOVING AS THERE IS NO ACCESS TO OCM
+//// 
+
+REMOVING AS THERE IS NO ACCESS TO OCM
 
 == Enable Autoscaling via Red Hat OpenShift Cluster Manager Console
 
