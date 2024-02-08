@@ -224,7 +224,7 @@ You've successfully scaled your cluster up and back down to two worker nodes.
 
 == Summary
 
-Here you learned:
+In this module you learned:
 
 * Creating a new Machine Pool for your ROSA cluster to add additional nodes to the cluster
 * Scaling your new Machine Pool up to add more nodes to the cluster
