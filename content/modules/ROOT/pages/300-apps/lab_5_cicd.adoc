@@ -515,7 +515,7 @@ Congratulations! You've successfully installed OpenShift Pipelines and used it t
 
 == Summary
 
-Here's what you learned:
+In this module you learned:
 
 * How to install and configure OpenShift Pipelines.
 * How to import Pipeline tasks.
