@@ -318,7 +318,7 @@ Return to your OpenShift Web Console.
 
 [NOTE]
 ====
-Reminder that you can get the URL and `admin`` password by running the following commands:
+Reminder that you can get the URL and `admin` password by running the following commands:
 [source,sh,role=execute]
 ----
 oc whoami --show-console
