@@ -20,7 +20,7 @@ asciidoc:
 
 ui:
   bundle:
-    url: https://github.com/danieloh30/mad-bundle-ui/raw/main/mad-bundle-ui.zip
+    url: https://github.com/rh-mad-workshop/mad-cat-rosa/blob/main/default-site.yml
     snapshot: true
   # supplemental_files:
   #   - path: ./content/supplemental-ui
